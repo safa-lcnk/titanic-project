@@ -1,0 +1,25 @@
+extends layouts/frontend
+
+include mixins
+
+block content
+    .ui.middle.aligned.center.aligned.grid
+        .six.wide.column
+            h1 Dashboard
+            h2 Les passagers du Titanic
+
+            p Bienvenue sur votre dashboard personnel #{loggedUser.firstName} #{loggedUser.lastName} !
+            
+            p Les passagers du Titanic sont les personnes qui ont embarqué à bord de ce paquebot transatlantique pour sa seule traversée entre son départ le 10 avril et son naufrage le 15 avril 1912.
+            p Nous comptons 900 personnes recensés qui ont fait naufrage.
+
+            p Vous pouvez consulter les données graphiques des différents passagers du Titanic selon plusieurs critères :
+
+            p
+            a(href='/sex') Âge
+
+            p
+            a(href='/sex') Classe
+
+            p
+            a(href='/sex') Sexe
